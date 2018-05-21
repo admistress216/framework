@@ -20,7 +20,7 @@ class BaseYii
         if (isset(static::$classMap[$className])) {
             $classFile = static::$classMap[$className];
         } elseif (strpos($className, '\\') !== false){
-
+            $classFile = '';
         } else {
             return;
         }
